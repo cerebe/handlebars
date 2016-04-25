@@ -49,7 +49,7 @@
                 var addButton = $('.btn--add-card');
                 addButton.on('click', function(e) {
                     e.preventDefault();
-                    var template = HH.notif;
+                    var template = HH.card;
                     addCard(template);
                 });
             }

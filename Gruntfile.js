@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    'js/template.js': 'js/notif.hbs'
+                    'js/template.js': 'js/card.hbs'
                 }
             }
         }

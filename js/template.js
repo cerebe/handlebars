@@ -1,6 +1,6 @@
 this["HH"] = this["HH"] || {};
 
-this["HH"]["notif"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+this["HH"]["card"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     return " card--female";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=container.escapeExpression, alias3=helpers.helperMissing, alias4="function";
