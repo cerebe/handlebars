@@ -54,9 +54,19 @@
                 });
             }
 
+            function bindScroll() {
+                $(window).on('scroll', _.throttle(onScroll,100));
+                //$(window).on('scroll', onScroll);
+            }
+
+            function onScroll() {
+                console.log('scrolling');
+            }
+
             // Init
             function init() {
                 bindAddButton();
+                bindScroll();
             }
 
             // Global var, just for easy example
