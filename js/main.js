@@ -25,7 +25,8 @@
                         url: 'http://www.json-generator.com/api/json/get/ckuIYGaAAy?indent=2',
                         dataType: 'jsonp',
                         success: function (data) {
-                            var totalItem = data.length;
+                            var cardContainer = $('.card-container'),
+                                totalItem = data.length;
                             for (var i = 0; i < totalItem; i++) {
                                 var thisData = data[i];
                                 console.log(thisData);
@@ -35,8 +36,7 @@
                                 }
                                 thisData.cardNum = i + 1;
                                 // Add card
-                                var newCard = template(thisData),
-                                    cardContainer = $('.card-container');
+                                var newCard = template(thisData);
                                 // Add card to container
                                 cardContainer.append(newCard);
                             }
